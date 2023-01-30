@@ -1,13 +1,15 @@
 .footer {
-    position: absolute;
+    position: relative;
+    padding: 1em 0;
     bottom: 0;
     left: 0;
     right: 0;
     background: #004643;
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding-top: 10px;
     color: #abd1c6;
+    
 
 }
 .footer-content {
@@ -75,4 +77,4 @@
     text-transform: uppercase;
     opacity: 0.4;
     font-weight: 200;
-  }
+}

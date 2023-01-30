@@ -1,0 +1,90 @@
+
+.olivetti {
+  text-align: center;
+  color: #001e1d;
+  padding-top: 2% ;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 2.5vw;
+  margin: 0 auto;
+  -webkit-animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+          animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+.seccion{
+  width: 100%;
+  font-weight: 600;
+  padding: 1em 0;
+  text-align: center;
+}
+.seccion h2 {
+  font-size: 2vw;
+  line-height: 1em;
+  color: black;
+  mix-blend-mode: exclusion;
+  font-size: 2.5vw;
+  animation: aparecer1 2s ease 1 both;
+}
+.foto {
+  border-radius: 50%;
+  width: 18%;
+  height: auto;
+  padding-top: 3%;
+  display: block;
+  margin: 0px auto;
+}
+.ul {
+  margin: 2em 0 0;
+  padding: 2%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.ul .li{
+  margin: 0 1em;
+  padding: 3%;
+  list-style: none;
+}
+.ul .a {
+  border: 2px solid #004643;
+  border-radius: 50%;
+  padding: 2em 2em 2em;
+  text-transform: uppercase;
+  font-weight: 800;
+  transition: all .5s ease;
+  animation: aparecer1 2s ease 1 backwards;
+  text-decoration: none;
+  color: #004643;
+  
+}
+.a:hover{
+  border-color: #588157;
+}
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+  
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

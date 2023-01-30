@@ -1,15 +1,21 @@
-import Header from "Components/Header"
+// import Header from "Components/Header"
 import Footer from "Components/Footer"
 import { Outlet } from "react-router-dom"
+import HeaderTwo from "Components/HeaderTwo"
+import "styles/layout.css"
+
 
 const Layoutprincipal = () => {
     return(
         <div>
-            <Header />
-            <main>
+            <HeaderTwo />
+            {/* <Header /> */}
+            <main className="contenido">
                 <Outlet />
             </main>
-            <Footer />
+            <Footer /> 
+
+           
             
         </div>
     )

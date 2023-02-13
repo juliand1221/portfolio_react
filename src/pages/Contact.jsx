@@ -4,19 +4,22 @@ import emailjs from '@emailjs/browser';
 
     
     export default function Contact (){
-        const form =useRef();
 
-        const sendEmail = (e) =>{
-            e.preventDefault();
+    const form =useRef();
 
-            emailjs.sendForm('service_buno8cr','template_ctfp7hg',form.current,'2SFrW9jc4N2Tj8-IV')
-            .then((result)=>{
-                alert('Se ha enviado el correo');
-                console.log(result);
+    const sendEmail = (e) =>{
+        e.preventDefault();
+        
+
+        emailjs.sendForm('service_buno8cr','template_ctfp7hg',form.current,'2SFrW9jc4N2Tj8-IV')
+        .then((result)=>{
+            alert('Se ha enviado el correo');
+            console.log(result);
+            e.target.reset();
   
 
-            });
-        };
+        });
+    };
 
 
 
@@ -56,16 +59,16 @@ import emailjs from '@emailjs/browser';
 
                             <form ref={form} onSubmit={sendEmail}>
                                 <div className="input-box">
-                                    <input type="text" placeholder="Enter Your Name" />
+                                    <input type="text" placeholder="Enter Your Name" name="name" />
                                 </div>
                                 <div className="input-box">
-                                    <input type="text" placeholder="Enter Your Email" />
+                                    <input type="text" placeholder="Enter Your Email" name="email"/>
                                 </div>
                                 <div className="input-box message-box">
-                                    <textarea ></textarea>
+                                    <textarea type="text" placeholder="Message" name="message" ></textarea>
                                 </div>
                                 <div className="button">
-                                    <button type="submit">Send Now</button>
+                                    <button type="submit" id="button-final">Send Message</button>
                                 </div>
                             </form>
                         </div>

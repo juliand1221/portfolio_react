@@ -21,7 +21,7 @@ export default function About () {
             </div>
             <br></br>
 
-            <section className="seccion works" id="works">
+            <section className="about" id="about">
                 <h1>Trabajos</h1>
                 <br></br>
                 <p>Aqui te presento algunos de mis trabajos mientras

@@ -8,7 +8,7 @@ export default function Principal () {
     return(
         <div className="container">
             <div className="olivetti">
-                <h1>¡HEY!, Welcome to my portfolio web</h1>
+                <h2>¡HEY!, Welcome to my portfolio web</h2>
             </div>
             <div className="seccion">
                 <h2 class="h2">Julian David Tenorio</h2>

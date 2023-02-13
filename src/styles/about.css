@@ -14,10 +14,10 @@ h1{
 p{
     font-size: 2vh;
     color: black;
-    font-weight: bold;
+    
 
 }
-.seccion {
+.about {
     width: 100%;
     display: flex;
     flex-flow: column wrap;
